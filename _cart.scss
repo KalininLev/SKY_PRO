@@ -1,0 +1,203 @@
+/*HEADER*/
+
+.header__cart {
+    height: 400px;
+    background-image: url(./img/header_cart_back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &__form {
+        background: #F7F6F6;
+        border-radius: 20px;
+        height: 556px;
+        grid-column: span 4;
+    }
+    
+    &__content {
+        grid-column: span 8;
+    }
+
+    &__content-products {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+    }
+
+    &__content-goods {
+        display: flex;
+        gap: 32px;
+    }
+    
+    &__content-goods-info{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        width: 276px;
+    }
+
+    &__content-goods-info-name {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: $colorTextBlack;
+    }
+
+    &__content-goods-info-disc {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $colorTextGrey
+    }
+
+    &__content-goods-info-price {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #050505;
+    }
+
+    &__content-name {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+        padding-right: 25px;
+    }
+
+    &__content-links {
+        display: flex;
+        gap: 32px;
+
+    }
+
+    &__content-link {
+        font-weight: 400;
+        font-size: 14px;
+        color: $colorTextBlack;
+        text-decoration-line: underline;
+
+        &:hover {
+            text-decoration: none;
+            color: $colorTextGrey;
+        }
+    }
+
+    &__content-input {
+        outline: none;
+        border-color: transparent;
+        text-align: center;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 210%;
+
+        width: 71px;
+        height: 51px;
+        background: #F7F6F6;
+        border-radius: 6px;
+
+    }
+
+    &__content-buttons {
+        padding-top: 18px;
+    }
+
+    &__content-button {
+        width: 200px;
+        height: 37px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+
+        border: 1px solid $colorTextBlack;
+        border-radius: 50px;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $colorTextBlack;
+            color: $colorTextWhite;
+        }
+
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    &__form-title {
+        display: flex;
+        justify-content: center;
+        padding-top: 42px;
+        padding-bottom: 35px;
+    }
+
+    &__form-input {
+        @include form-input
+    }
+
+    &__form-sum {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 18px;
+        margin-top: 20px;
+
+    }
+
+    &__form-total {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+
+        color: $colorTextBlack;
+    }
+
+    &__form-price {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+
+        color: $colorTextBlack;
+    }
+
+    &__form-btn {
+        width: 290px;
+        height: 41px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+
+
+        border: 1px solid $colorTextBlack;
+        border-radius: 50px;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $colorTextBlack;
+            color: $colorTextWhite;
+        }
+    }
+
+}
