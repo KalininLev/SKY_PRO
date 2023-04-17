@@ -167,6 +167,7 @@ body {
 .for__item{
     display: flex;
     justify-content: center;
+    background-size: cover;
     padding-top: 166px;
 
     height: 415px;
@@ -424,7 +425,7 @@ body {
     justify-content: space-between;    
     align-items: flex-start;
 
-    height: 207px;
+    padding-bottom: 40px;
     padding-top: 32px;
     background-color: #F7F6F6;
 }
@@ -585,3 +586,4 @@ body {
 }
 
 @import 'cart';
+@import 'tablet';
