@@ -47,6 +47,10 @@
 
         }
 
+        &__main-catalog {
+            margin-top: 82px;
+        }
+
         &__move-link {
             font-size: 14px;
             line-height: 24px;
@@ -155,11 +159,97 @@
             }
         }
 
+        &__nav {
+            &-item {
+                font-size: 14px;
+                line-height: 32px;
+            }
+        }
+
+        &__filter{
+            &-select{
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
+        &__top {
+            flex-wrap: wrap;
+            row-gap: 16px;
+
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+
         &__move {
             margin-top: 36px;
             margin-bottom: 32px;
         }
     }
+
+    .cart {
+        margin-top: 92px;
+        row-gap: 48px;
+        column-gap: 0;
+
+        &__content {
+            &-name {
+                display: none;
+            }
+
+            &-img {
+                display: none;
+            }
+
+            &-products {
+                padding-top: 18px;
+                padding-bottom: 24px;
+            }
+
+            &-goods-info {
+                width: 253px;
+                gap: 0;
+
+                &-name{
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding-bottom: 8px;
+                }
+
+                &-disc{
+                    font-size: 12px;
+                    line-height: 15px;
+                    padding-bottom: 15px;
+                }
+
+                &-price{
+                    font-size: 12px;
+                    line-height: 15px;
+                    padding-bottom: 15px;
+                }
+
+            }
+
+            &-buttons {
+                display: flex;
+                margin-top: 8px;
+                gap: 14px;
+            }
+
+            &-button {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+
+        &__form {
+            grid-column: span 12;
+        }
+
+
+
+    }
+
 
     .footer {
         column-gap: 80px;
