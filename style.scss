@@ -109,6 +109,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: $colorTextWhite;
+    transition: all 0.3s linear;
 }
 
 .header__navM {
@@ -153,6 +154,7 @@ body {
     line-height: 24px;
     text-decoration-line: underline;
     color: $colorTextWhite;
+    transition: all 0.3s linear;
 }
 
 /* MAIN */
@@ -192,6 +194,13 @@ body {
 
     color: $colorTextWhite;
 
+    transition: all 0.15s linear;
+
+    &:hover {
+        box-sizing: border-box;
+        box-shadow: 0px 1px 6px 8px rgba(34, 60, 80, 0.2);
+        transform: scale(1.01);
+    }
 }
 
 .for__item-big {
@@ -243,6 +252,15 @@ body {
 
 .special__goods {
     width: 377px;
+    padding: 5px;
+    transition: all 0.25s linear;
+
+    &:hover {
+        box-sizing: border-box;
+        box-shadow: 0px 5px 10px 12px rgba(34, 60, 80, 0.2);
+        border-radius: 0px 0px 10px 10px;
+        transform: scale(1.02);
+    }
 }
 
 .special__goods-prev {
@@ -309,6 +327,16 @@ body {
 .catalog__goods {
     width: 377px;
     position: relative;
+
+    padding: 5px;
+    transition: all 0.25s linear;
+
+    &:hover {
+        box-sizing: border-box;
+        box-shadow: 0px 5px 10px 12px rgba(34, 60, 80, 0.2);
+        border-radius: 0px 0px 10px 10px;
+        transform: scale(1.02);
+    }
 }
 
 .catalog__goods-prev{
@@ -359,6 +387,7 @@ body {
     line-height: 24px;
     text-decoration-line: underline;
     color: $colorTextBlack;
+    transition: all 0.3s linear;
 }
 
 /* CATALOG PAGE */
@@ -398,7 +427,8 @@ body {
 }
 
 .catalog__nav-link {
-    color: $colorTextBlack
+    color: $colorTextBlack;
+    transition: all 0.3s linear;
 }
 
 .catalog__filter {
@@ -475,6 +505,7 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: $colorTextGrey;
+    transition: all 0.3s linear;
 }
 
 .footer__contacts {
@@ -496,6 +527,7 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: $colorTextGrey;
+    transition: all 0.3s linear;
 }
 
 .footer__contacts-social{
@@ -568,6 +600,7 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: $colorTextBlack;
+    transition: all 0.3s linear;
 }
 
 /* HOVERS */

@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@keyframes myAnim {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* Reset and base styles  */
 * {
   padding: 0px;
@@ -191,6 +199,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  transition: all 0.3s linear;
 }
 
 .header__navM {
@@ -234,6 +243,7 @@ body {
   line-height: 24px;
   text-decoration-line: underline;
   color: #FFFFFF;
+  transition: all 0.3s linear;
 }
 
 /* MAIN */
@@ -261,6 +271,12 @@ body {
   line-height: 41px;
   text-align: center;
   color: #FFFFFF;
+  transition: all 0.15s linear;
+}
+.for__item:hover {
+  box-sizing: border-box;
+  box-shadow: 0px 1px 6px 8px rgba(34, 60, 80, 0.2);
+  transform: scale(1.01);
 }
 
 .for__item-big {
@@ -311,6 +327,14 @@ body {
 
 .special__goods {
   width: 377px;
+  padding: 5px;
+  transition: all 0.25s linear;
+}
+.special__goods:hover {
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px 12px rgba(34, 60, 80, 0.2);
+  border-radius: 0px 0px 10px 10px;
+  transform: scale(1.02);
 }
 
 .special__goods-prev {
@@ -371,6 +395,14 @@ body {
 .catalog__goods {
   width: 377px;
   position: relative;
+  padding: 5px;
+  transition: all 0.25s linear;
+}
+.catalog__goods:hover {
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px 12px rgba(34, 60, 80, 0.2);
+  border-radius: 0px 0px 10px 10px;
+  transform: scale(1.02);
 }
 
 .catalog__goods-prev {
@@ -419,6 +451,7 @@ body {
   line-height: 24px;
   text-decoration-line: underline;
   color: #000000;
+  transition: all 0.3s linear;
 }
 
 /* CATALOG PAGE */
@@ -451,6 +484,7 @@ body {
 
 .catalog__nav-link {
   color: #000000;
+  transition: all 0.3s linear;
 }
 
 .catalog__filter-select {
@@ -509,6 +543,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #888888;
+  transition: all 0.3s linear;
 }
 
 .footer__contacts {
@@ -530,6 +565,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #888888;
+  transition: all 0.3s linear;
 }
 
 .footer__contacts-social {
@@ -607,6 +643,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+  transition: all 0.3s linear;
 }
 
 /* HOVERS */
@@ -711,6 +748,7 @@ body {
   font-size: 14px;
   color: #000000;
   text-decoration-line: underline;
+  transition: all 0.3s linear;
 }
 .cart__content-link:hover {
   text-decoration: none;
@@ -744,6 +782,7 @@ body {
   border: 1px solid #000000;
   border-radius: 50px;
   background-color: transparent;
+  transition: all 0.3s linear;
 }
 .cart__content-button:hover {
   background-color: #000000;
@@ -829,6 +868,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  transition: all 0.3s linear;
+  animation: myAnim 2s ease 1s 1 normal forwards;
   border: 1px solid #000000;
   border-radius: 50px;
   background-color: transparent;
