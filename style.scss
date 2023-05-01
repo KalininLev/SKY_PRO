@@ -291,14 +291,14 @@ body {
     gap: 32px;
 }
 
-.special__goods-price-discount {
+.special__price-discount {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #050505;
 }
 
-.special__goods-price-full {
+.special__price-full {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -633,3 +633,4 @@ body {
 @import 'cart';
 @import 'tablet';
 @import 'mobile';
+@import 'laptop';

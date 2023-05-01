@@ -97,6 +97,18 @@
             margin-top: 32px;
         }
 
+        &__price {
+            &-discount {
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            &-full{
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+
         &__goods {
             width: 91.5vw;
 
@@ -110,17 +122,6 @@
                 line-height: 17px;
             }
 
-            &-price{
-                &-discount{
-                    font-size: 18px;
-                    line-height: 22px;
-                }
-
-                &-full{
-                    font-size: 18px;
-                    line-height: 22px;
-                }
-            }
         }
     }
 
@@ -197,39 +198,6 @@
                 display: none;
             }
 
-            &-img {
-                display: none;
-            }
-
-            &-products {
-                padding-top: 18px;
-                padding-bottom: 24px;
-            }
-
-            &-goods-info {
-                width: 253px;
-                gap: 0;
-
-                &-name{
-                    font-size: 18px;
-                    line-height: 22px;
-                    padding-bottom: 8px;
-                }
-
-                &-disc{
-                    font-size: 12px;
-                    line-height: 15px;
-                    padding-bottom: 15px;
-                }
-
-                &-price{
-                    font-size: 12px;
-                    line-height: 15px;
-                    padding-bottom: 15px;
-                }
-
-            }
-
             &-buttons {
                 display: flex;
                 margin-top: 8px;
@@ -240,6 +208,41 @@
                 font-size: 12px;
                 line-height: 15px;
             }
+        }
+
+        &__products {
+            padding-top: 18px;
+            padding-bottom: 24px;
+        }
+
+        &__goods {
+            &-img {
+                display: none;
+            }
+
+            &-info {
+                width: 253px;
+                gap: 0;
+            }
+
+            &-name{
+                font-size: 18px;
+                line-height: 22px;
+                padding-bottom: 8px;
+            }
+
+            &-disc{
+                font-size: 12px;
+                line-height: 15px;
+                padding-bottom: 15px;
+            }
+
+            &-price{
+                font-size: 12px;
+                line-height: 15px;
+                padding-bottom: 15px;
+            }
+
         }
 
         &__form {
